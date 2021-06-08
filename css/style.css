@@ -148,10 +148,13 @@
 
 .tag {
   display: inline-block;
-  padding-right: 10px;
   list-style: none;
   font-weight: 700;
   letter-spacing: 1px;
+}
+
+.tag:not(:last-child) {
+  margin-right: 10px;
 }
 
 .tag-link {
