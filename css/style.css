@@ -96,6 +96,10 @@
   text-decoration: none;
 }
 
+.menu-link:hover {
+  text-decoration: underline;
+}
+
 .intro {
   max-width: 687px;
   margin: 125px auto 0 auto;
@@ -157,6 +161,10 @@
   text-decoration: none;
 }
 
+.tag-link:hover {
+  text-decoration: underline;
+}
+
 .article-title {
   font-family: OpenSans, sans-serif;
   font-weight: 700;
@@ -168,6 +176,11 @@
   text-decoration: none;
   color: #000000;
 }
+
+.article-title-link:hover {
+  color: #b59f5b;
+} 
+
 
 .article-caption {
   display: flex;
@@ -271,6 +284,12 @@
   background-color: #f4f7f6;
 }
 
+.input-focus:focus {
+  outline-style: solid;
+  outline-width: 1px;
+  outline-color: #b59f5b;
+}
+
 .search-button {
   display: block;
   width: 50px;
@@ -282,6 +301,10 @@
   background-position: center center;
   background-color: #b59f5b;
   cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #323232;
 }
 
 .newsletter-form {
@@ -315,24 +338,38 @@
   cursor: pointer;
 }
 
+.primary-button:hover {
+  background-color: #323232;
+}
+
 .tags-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .tags-item {
-  border: 2px solid #eeeeee;
-  padding: 5px 10px;
-  margin: 5px;
-  font-size: 12px;
-  font-weight: 700;
-  text-transform: uppercase;
+  display: flex;
   list-style: none;
 }
 
 .tags-item-link {
+  border: 2px solid #eeeeee;
+  padding: 5px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+}
+
+.tags-item {
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+
+.tags-item-link:hover {
+  background-color: rgba(244,243,241,0);
+  border: 3px solid #b59f5b;
 }
 
 .themes {
@@ -347,11 +384,16 @@
   border-bottom: 1px solid #eeeeee;
   font-size: 14px;
   font-weight: 700;
+  font-family: OpenSans, sans-serif;
 }
 
 .theme-link {
   text-decoration: none;
   color: #000000;
+}
+
+.theme-link:hover {
+  color: #b59f5b;
 }
 
 .theme-counter {
@@ -468,6 +510,10 @@
   padding-bottom: 15px;
 }
 
+.trend:not(:first-child) {
+  margin-left: 5px;
+}
+
 .trend-1 {
   background-image: url("../images/img/trend1.jpg");
   background-position: center center;
@@ -529,6 +575,10 @@
 .trend-link {
   color: #ffffff;
   text-decoration: none;
+}
+
+.trend-link:hover {
+  color: #b59f5b;
 }
 
 .section-products {
@@ -596,6 +646,10 @@
 .product-text-link {
   color: #b59f5b;
   text-decoration: none;
+}
+
+.product-text-link:hover {
+  text-decoration: underline;
 }
 
 .product-old-price {
@@ -801,6 +855,11 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .trend:not(:first-child) {
+    margin-left: 0;
   }
 
   .trend-name {
@@ -877,6 +936,9 @@
 @media (max-width: 500px) and (orientation: landscape) {
   .trend {
     width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 5px;
   }
 }
 
