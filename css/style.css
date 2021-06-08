@@ -1005,7 +1005,7 @@
   height: 26px;
   margin-right: 5px;
   vertical-align: middle;
-  background-image: url("../images/svg/form-empty-circle.svg");
+  background-image: url("../images/svg/form-circle.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 26px;
@@ -1017,10 +1017,6 @@
 
 .feedback-checkbox:checked ~ .feedback-text-no::before {
   background-image: url("../images/svg/form-empty-circle.svg");
-}
-
-.feedback-checkbox ~ .feedback-text-no::before {
-  background-image: url("../images/svg/form-circle.svg");
 }
 
 .feedback-textarea {
