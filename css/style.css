@@ -998,10 +998,6 @@
   background-size: 26px;
 }
 
-.feedback-checkbox-yes:checked ~ .feedback-text-yes::before {
-  background-image: url("../images/svg/form-circle.svg");
-}
-
 .feedback-text-no::before {
   content: "";
   display: inline-block;
@@ -1015,7 +1011,11 @@
   background-size: 26px;
 }
 
-.feedback-checkbox-no:checked ~ .feedback-text-no::before {
+.feedback-checkbox:checked ~ .feedback-text-yes::before {
+  background-image: url("../images/svg/form-circle.svg");
+}
+
+.feedback-checkbox ~ .feedback-text-no::before {
   background-image: url("../images/svg/form-circle.svg");
 }
 
