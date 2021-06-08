@@ -1015,6 +1015,10 @@
   background-image: url("../images/svg/form-circle.svg");
 }
 
+.feedback-checkbox:checked ~ .feedback-text-no::before {
+  background-image: url("../images/svg/form-empty-circle.svg");
+}
+
 .feedback-checkbox ~ .feedback-text-no::before {
   background-image: url("../images/svg/form-circle.svg");
 }
