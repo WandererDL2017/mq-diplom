@@ -140,12 +140,6 @@
   background-size: cover;
 }
 
-.article-content {
-  display: flex;
-  flex-wrap: wrap;
-  padding-right: 10px;
-}
-
 .tag {
   display: inline-block;
   list-style: none;
@@ -237,10 +231,7 @@
 }
 
 .sidebar-article-block {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 15px;
+  margin-left: 20px;
 }
 
 .sidebar-article-img {
