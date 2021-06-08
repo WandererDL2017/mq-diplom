@@ -239,10 +239,13 @@
           <h3 class="sidebar-header-name visually-hidden">Поиск</h3>
         </header>
         <form class="search-form">
-          <span class="visually-hidden">поле ввода поиска</span>
-          <input type="text" class="search-box" placeholder="Найти..." required>
-          <span class="visually-hidden">кнопка поиска</span>
-          <button class="search-button" type="submit"></button>
+          <label for="search" class="search-label">
+            <span class="visually-hidden">поле ввода поиска</span>
+            <input id="search" class="search-box" type="search" placeholder="Найти..." required> 
+          </label>
+          <button class="search-button" type="submit">
+            <span class="visually-hidden">кнопка поиска</span>
+          </button>
         </form>
       </section>
       <section class="sidebar-item">
@@ -250,10 +253,14 @@
           <h3 class="sidebar-header-name">Рассылка</h3>
         </header>
         <form class="newsletter-form">
-          <span class="visually-hidden">поле рассылки</span>
-          <input type="email" class="newsletter-box" placeholder="Ваш email-адрес" required>
-          <span class="visually-hidden">кнопка подписаться</span>
-          <button class="newsletter-button primary-button" type="submit">Подписаться</button>
+          <label class="newsletter-label" for="email">
+            <span class="visually-hidden">поле рассылки</span>
+            <input id="email" class="newsletter-box" type="email" placeholder="Ваш email-адрес" required>
+          </label>
+          <button class="newsletter-button primary-button" type="submit">
+            <span class="visually-hidden">кнопка подписаться</span>
+            Подписаться
+          </button>
         </form>
       </section>
       <section class="sidebar-item">
@@ -364,27 +371,31 @@
         <div class="feedback-content">
           <form class="feedback-form">
             <div class="feedback-row">
-              <label class="feedback-label" for="select">Как часто вы заходите на сайт?</label>
-              <select id="select" class="feedback-select">
-                <option>Почти каждый день</option>
-                <option>Раз в несколько дней</option>
-                <option>Раз в несколько недель</option>
-                <option>Несколько раз в год</option>
-              </select>
+              <label class="feedback-label" for="select">
+                <span class="feedback-name">Как часто вы заходите на сайт?</span>
+                <select id="select" class="feedback-select">
+                  <option>Почти каждый день</option>
+                  <option>Раз в несколько дней</option>
+                  <option>Раз в несколько недель</option>
+                  <option>Несколько раз в год</option>
+                </select>
+              </label>
             </div>
             <div class="feedback-row">
-              <span class="feedback-label">Вы подписаны на email рассылку?</span>
               <div class="feedback-checkboxes">
-                <label>
-                  <input class="feedback-checkbox feedback-checkbox-hidden" type="checkbox" checked />
+                <label class="feedback-label" for="checkboxes">
+                  <span class="feedback-name">Вы подписаны на email рассылку?</span>
+                  <input id="checkboxes" class="feedback-checkbox feedback-checkbox-hidden" type="checkbox" checked />
                   <span class="feedback-text-yes">Да</span>
                   <span class="feedback-text-no">Нет</span>
                 </label>
               </div>
             </div>
             <div class="feedback-row">
-              <label class="feedback-label" for="textarea">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
-              <textarea id="textarea" class="feedback-textarea" placeholder="Может, больше рецептов?" name="textarea" rows="7" required></textarea>
+              <label class="feedback-label" for="textarea">
+                <span class="feedback-name">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <textarea id="textarea" class="feedback-textarea" placeholder="Может, больше рецептов?" name="textarea" rows="7" required></textarea>
+              </label>
             </div>
             <div class="feedback-row">
               <button class="primary-button">
