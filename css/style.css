@@ -256,9 +256,14 @@
   margin-top: 20px;
 }
 
+.search-label {
+  display: flex;
+  flex: 1;
+}
+
 .search-box {
   display: block;
-  flex: 1;
+  width: 100%;
   border: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -282,12 +287,12 @@
 .newsletter-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
   margin-top: 20px;
 }
 
 .newsletter-box {
   display: block;
+  width: 100%;
   padding: 20px;
   border: none;
   font-family: inherit;
@@ -377,6 +382,9 @@
 
 .social-group {
   display: inline-block;
+}
+
+.social-group:not(:first-child) {
   margin-left: 25px;
 }
 
@@ -847,6 +855,11 @@
   .product:nth-child(n + 2) {
     margin-top: 25px;
   }
+
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
@@ -914,11 +927,11 @@
   display: flex;
 }
 
-.feedback-label {
+.feedback-name {
+  margin-bottom: 8px;
   font-weight: 400;
   font-size: 13px;
-  margin-bottom: 8px;
-  display: block;
+  display: block; 
 }
 
 .feedback-close {
