@@ -960,10 +960,6 @@
   .trend:nth-child(odd) {
     margin-right: 0;
   }
-
-  .trend:nth-child(n+3) {
-    margin-top: 5px;
-  }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -977,6 +973,10 @@
 
   .trend:nth-child(odd) {
     margin-right: 5px;
+  }
+
+  .trend:nth-child(n+3) {
+    margin-top: 5px;
   }
 }
 
