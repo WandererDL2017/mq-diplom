@@ -182,7 +182,6 @@
   color: #b59f5b;
 } 
 
-
 .article-caption {
   display: flex;
   margin-top: 30px;
@@ -691,8 +690,6 @@
     margin-top: 5px;
   }
 
-  
-
   .trend-name {
     font-size: 17px;
   }
@@ -871,6 +868,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-bottom: 5px;
   }
 
   .trend:not(:first-child) {
@@ -962,6 +960,10 @@
   .trend:nth-child(odd) {
     margin-right: 0;
   }
+
+  .trend:nth-child(n+3) {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
@@ -975,10 +977,6 @@
 
   .trend:nth-child(odd) {
     margin-right: 5px;
-  }
-
-  .trend:nth-child(n+3) {
-    margin-top: 5px;
   }
 }
 
@@ -1010,7 +1008,6 @@
   padding-bottom: 50px;
   background-color: rgba(0, 0, 0, 0.75);
   overflow-y: auto;
-  
 }
 
 .popup-container {
