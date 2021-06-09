@@ -147,6 +147,7 @@
 .tag {
   display: inline-block;
   list-style: none;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -881,6 +882,10 @@
   .article-img {
     width: 100%;
     padding: 0;
+  }
+  
+  .article-title {
+    font-size: 16px;
   }
 
   .tags {
