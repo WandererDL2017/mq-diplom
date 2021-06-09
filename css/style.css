@@ -871,7 +871,6 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-bottom: 5px;
   }
 
   .trend:not(:first-child) {
@@ -913,7 +912,7 @@
     font-size: 16px;
   }
 
-  article-text {
+  .article-text {
     font-size: 14px;
   }
 
@@ -937,6 +936,11 @@
 
   .product:nth-child(n + 2) {
     margin-top: 25px;
+  }
+
+  .product-img {
+    width: 100%;
+    padding: 0;
   }
 
   .social-icon {
@@ -964,12 +968,32 @@
   .trend {
     width: calc(100%/2 - 5px);
   }
+
+  .trend:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(odd) {
+    margin-right: 5px;
+  }
+
+  .trend:nth-child(n+3) {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 500px) and (orientation: landscape) {
   .trend {
     width: 100%;
     margin-left: 0;
+    margin-right: 0;
+  }
+
+  .trend:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(odd) {
     margin-right: 0;
   }
 }
