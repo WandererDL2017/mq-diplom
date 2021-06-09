@@ -147,8 +147,9 @@
 .tag {
   display: inline-block;
   list-style: none;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 .tag:not(:last-child) {
@@ -275,8 +276,7 @@
 }
 
 .search-box {
-  display: block;
-  width: 100%;
+  flex: 1;
   border: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -291,7 +291,6 @@
 }
 
 .search-button {
-  display: block;
   width: 50px;
   height: 50px;
   border: none;
@@ -314,7 +313,6 @@
 }
 
 .newsletter-box {
-  display: block;
   width: 100%;
   padding: 20px;
   border: none;
@@ -505,7 +503,7 @@
   z-index: 0;
   display: flex;
   align-items: flex-end;
-  width: 25%;
+  width: calc(100%/3 - 5px);
   min-height: 320px;
   padding-bottom: 15px;
 }
@@ -678,8 +676,22 @@
   }
 
   .trend {
-    width: 50%;
+    width: calc(100%/2 - 5px);
   }
+
+  .trend:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .trend:nth-child(odd) {
+    margin-right: 5px;
+  }
+
+  .trend:nth-child(n+3) {
+    margin-top: 5px;
+  }
+
+  
 
   .trend-name {
     font-size: 17px;
@@ -734,7 +746,11 @@
 
 @media (max-width: 768px) {
   .trend {
-    width: 50%;
+    width: calc(100%/2 - 5px);
+  }
+
+  .trend:not(:first-child) {
+    margin-left: 0;
   }
 
   .menu {
@@ -882,10 +898,6 @@
     width: 100%;
     padding: 0;
   }
-  
-  .article-title {
-    font-size: 16px;
-  }
 
   .tags {
     margin-top: 15px;
@@ -895,6 +907,14 @@
   .article-caption {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+
+  .article-title {
+    font-size: 16px;
+  }
+
+  article-text {
+    font-size: 14px;
   }
 
   .sidebar {
@@ -927,13 +947,22 @@
 
 @media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
   .trend {
-    width: 25%;
+    width: calc(100%/4 - 5px);
+  }
+
+  .trend:not(:first-child) {
+    margin-left: 5px;
+    margin-top: 0;
+  }
+
+  .trend:nth-child(odd) {
+    margin-right: 0;
   }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
   .trend {
-    width: 50%;
+    width: calc(100%/2 - 5px);
   }
 }
 
@@ -942,7 +971,6 @@
     width: 100%;
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 5px;
   }
 }
 
